@@ -3,7 +3,6 @@
   padding: 0;
   font-family: 'montserrat', sans-serif;
   box-sizing: border-box;
-  overflow: none;
 }
 
 body, html {
@@ -33,7 +32,7 @@ aside {
   display: none;
 }
 
-figcaption {
+.header-caption {
   color: #fff; 
   font-size: 1.4em;
   font-weight: bold;
@@ -106,22 +105,26 @@ main {
 }
 
 .cta {
-  background-color: #7F9ED5;
-  border: 3px solid #7f9ed5;
-  text-decoration: none;
-  color: #fff;
-  padding: 1em;
-  border-radius: 8px;
   display: inline-block;
   margin: 2em auto;
-  text-align: center;
 }
 
-.cta:hover {
-  border: 3px solid #7F9ED5;
+.btn {
+    border: 3px solid #7F9ED5;
   background-color: #fff;
   color: #7F9ED5;
   font-weight: bold;
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #7F9ED5;
+  border: 3px solid #7f9ed5;
+  color: #fff;
+  font-weight: normal;
 }
 
 .about-photo {
@@ -191,7 +194,6 @@ main {
   position: absolute;
   top: 0;
   z-index: 3;
-  bottom: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,15 +205,62 @@ main {
   bottom: 0;
   max-height: 100%;
 }
-/*
+
+/*Contact Section*/
+.contact {
+    padding: 1em;
+    height: inherit;
+}
+
+.contact-text {
+    text-align: center;
+    padding-top: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-text-header {
+    font-size: 2.7em;
+}
+
+.contact-text-desc {
+    line-height: 1.5em;
+}
+
+.contact-form{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.contact-form label{
+    font-size: 1.5em;
+}
+.contact-form input, .contact-form textarea {
+    border: none;
+    box-shadow: inset 0px 0px 4px 2px #7F9ED5;
+    padding: 3px;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.contact-form-btn {
+    margin: 1em auto;
+    display: inline-block;
+}
+
 .contact-icons {
   margin: 1em auto;
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
-}*/
+  color: #7F9ED5;
+}
 
-@media only screen and (min-width: 768px) {
+/*Desktop View*/
+@media only screen and (min-width: 768px) {  
+/*Navigation*/
   nav {
     position: fixed;
     top: 0;
@@ -222,7 +271,7 @@ main {
     display: block;
     float: left;
   }
-  figcaption {
+  .header-caption {
     display: inline-block;
     margin: .5em 1em;
   }
@@ -235,7 +284,6 @@ main {
     position: absolute;
     top: 0;
     left: auto;
-    right: 0;
     right: 20px;
   }
   
@@ -332,5 +380,35 @@ main {
   }
   .work figure {
       width: 40%;
+  }
+
+  /*Contact Section*/
+  .contact {
+    padding: 5em 10em;
+  }
+  .contact-text {
+    width: 50%;
+    float: right;
+    text-align: left;
+  }
+  .contact-text-desc {
+    margin-top: 30px;
+  }
+
+  .contact-form {
+    width: 30%;
+    display: inline;
+  }
+
+  .contact-icons {
+    width: 50%;
+    padding-left: 5%;
+    justify-content: flex-start;
+    float: right;
+    transform: scale(1.4);
+  }
+
+  .contact-icons svg {
+    margin: 0 .3em;
   }
 }

@@ -23,7 +23,7 @@
 <aside>
   <figure>
     <img src="https://s26.postimg.cc/fo229bi09/avatar.jpg" alt="avatar" title="avatar" id="avatar"/>
-    <figcaption>John Doe</figcaption>
+    <figcaption class="header-caption">John Doe</figcaption>
   </figure>
   <i class="fas fa-bars hamburger" id="hamburger" onmouseover="showMenu()"></i>
 </aside>
@@ -32,7 +32,7 @@
       <li><a href="#about" class="scroll">About</a></li>
       <li><a href="#work" class="scroll">Portfolio</a></li>
       <li><a href="#" class="scroll">Blog</a></li>
-      <li><a href="#" class="scroll">Contact</a></li>
+      <li><a href="#contact" class="scroll">Contact</a></li>
     </ul>
 </nav>
 <main id="home">
@@ -41,7 +41,7 @@
     <h1>I'm a designer.</h1> 
   </div>
   <p class="home-para">I make websites, create logos and maintain a design blog.</p>
-  <a class="cta button scroll" href="#work">see my portfolio</a>
+  <a class="cta btn scroll" href="#work">My Work</a>
 </main>
 <main id="about">
   <img src="https://s26.postimg.cc/fo229bi09/avatar.jpg" alt="image" title="image" class="about-photo"/>
@@ -75,16 +75,27 @@
     </figure>
     </div>
 </main>
-<!--
-<main id="contact">
-  <div class="about-icons">
+<main id="contact" class="contact">
+    <div class="contact-text">
+        <h1 class="contact-text-header">Talk to Me</h1>
+        <p class="contact-text-desc">If you something to tell me, I would love to hear it. Send me a message.</p>
+    </div>
+    <form class="contact-form" method="post" action="#">
+        <label for="name" class="contact-form-name-label">Name:</label></br>
+        <input type="text" name="name" required class="contact-form-name-field" max-length="15" size="20"/></br>
+        <label for="subject" class="contact-form-subject-label">Subject:</label></br>
+        <input type="text" name="subject" required class="contact-form-subject-field" maxlength="15" size="20"/></br>
+        <label for="message" class="contact-form-message-label">Message:</label></br>
+        <textarea required name="message" class="contact-form-message-field" rows="5" cols="20" maxlength="100"></textarea></br>
+        <button class="contact-form-btn btn" name="submit" type="submit" value="submit">Submit</button>
+    </form>
+  <div class="contact-icons">
     <i class="fab fa-facebook-f fa-2x" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle"></i>
     <i class="fab fa-twitter fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i>
-    <i class="fab fa-google-plus fa-2x"></i>
     <i class="fab fa-github fa-2x"></i>
-    <i class="fab fa-codepen fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i>
+    <!--<i class="fab fa-codepen fa-2x" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i>-->
   </div>
-</main>-->
+</main>
   <script src='https://use.fontawesome.com/releases/v5.1.0/js/all.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
