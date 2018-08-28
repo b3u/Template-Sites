@@ -1,0 +1,150 @@
+/* Variables */
+:root{
+	--dark:#3E4E50;
+	--light: #FFD7BF;
+	--accent: #F5AC72;
+
+	--headerText: 'OCR A', monospace;
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	color: var(--dark);
+}
+
+/* Navigation Section */
+nav {
+	background-color: #DC9B66;
+	height: 50px;
+	width: 100%;
+	padding: 0 50px;
+
+	position: fixed;
+	top: 0;
+	z-index: 2;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-link {
+	display: inline-block;
+	padding: 0 30px;
+	color: var(--dark);
+	text-decoration: none;
+	font-family: var(--headerText);
+	font-size: 1.25em;
+}
+
+.nav-link.active, .nav-link:hover{
+	color: var(--light);
+}
+
+.logo {
+	height: 30px;
+}
+
+/* Splash Section */
+.splash{
+	height: 100vh;
+	padding-top: 50px;
+}
+
+.content{
+	background: var(--accent);
+	height: 90%;
+	padding: 0 50px;
+
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+}
+
+.content .splash-text h1{
+		padding-top: 100px;
+		color: var(--light);
+		font-family: var(--headerText);
+		font-size: 3em;
+		line-height: 1.6em;
+}
+
+.content h2 {
+	padding-top: 1em;
+	padding-bottom: 4em;
+
+	color: var(--light);
+	font-size: 1em;
+	font-style: italic;
+}
+
+.btn-light{
+	padding: .7em;
+	background-color: white;
+	color: var(--dark);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.25em;
+	border-radius: 5px;
+}
+
+.splash-img{
+	height: 90%;
+	margin-left: 15%;
+}
+
+/* Features Section */
+.about{
+	padding: 150px 0;
+}
+
+.about .header{
+	font-family: var(--headerText);
+	text-align: center;
+	font-size: 3em;
+}
+
+.card-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	width: 90%;
+	margin: 0 auto;
+}
+
+.card{
+	margin-top: 100px;
+
+	box-shadow: 0 0 25px 4px #00000025;
+	border-radius: 15px;
+	padding: 2em;
+	text-align: center;
+	width: 300px;
+}
+
+.card-icon{
+	font-size: 6em;
+}
+
+.card-title {
+	margin-top: 1em;
+}
+
+.card-para {
+	margin-top: 3em;
+}
+
+/* Download Section */
+.download .header{
+	font-family: var(--headerText);
+	text-align: center;
+	font-size: 3em;
+}

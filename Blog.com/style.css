@@ -1,0 +1,348 @@
+/*Variables*/
+:root{
+	--main: #EF9C9C;   
+	--bg: #F3F3F3;
+	--accent: #7B7B7B;
+}
+
+/*Reset*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'montserrat', sans-serif;
+	color: var(--accent);
+}
+
+/* Mobile View */
+
+/*Navigation Section*/
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 2;
+
+	width: 100%;
+	height: 50px;
+	background-color: var(--main);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5em 1.5em;
+}
+
+.navbar_header{
+	font-size: 2em;
+}
+
+.hamburger {
+	color: white;
+	font-size: 2em;
+}
+
+.subNav {
+ 	display: none;
+ }
+
+.nav{
+	max-height: 0;
+	background-color: var(--bg);
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+
+	position: absolute;
+	top: 55px;
+	right: 0;
+
+	transition: 1s ease-in-out;
+}
+
+.activeNav {
+	max-height: 50vh;
+	padding: 1em 0;
+}
+
+.nav-link{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: .5em 0;
+	font-size: 1.5em;
+}
+
+/*splash Section*/
+.splash {
+	margin-top: 50px;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cta-text {
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.cta-text h1 {
+	color: var(--main);
+	font-weight: 900;
+	font-size: 3em;
+}
+
+.cta-text h2 {
+	font-weight: 100;
+	color: var(--accent);
+	font-size: 2em;
+}
+
+.cta-btn {
+	margin-top: 2em;
+	background-color: var(--accent);
+	color: white;
+	text-decoration: none;
+	font-size: 1.75em;
+	padding: .25em .5em;
+	border-radius: 50px;
+}
+
+/*About Section*/
+.about{
+	background-color: var(--bg);
+	text-align: center;
+}
+
+.about h1{
+	padding-top: 2.75em;
+}
+
+.about i {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	font-size: 5em;
+}
+
+.about p {
+ 	width: 90%;
+ 	margin: 0 auto;
+ 	padding-bottom: 5em;
+}
+
+/*Pricing Section*/
+.pricing {
+	padding: 1em 0;
+}
+
+.pricing h1 {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.5em;
+	padding: 1.5em 0;
+}
+
+.modal {
+	text-align: center;
+	width: 70%;
+	margin: 2em auto;
+	border-radius: 50px;
+}
+
+.modal header{
+	color: white;
+	font-size: 1.75em;
+	border-top-right-radius: 45px; 
+	border-top-left-radius: 45px;
+	padding: .5em;
+}
+
+.modal article {
+	height: auto;
+	max-height: 0;
+	padding: 0;
+	transition: max-height 1s linear, padding .2s ease-out 1s;
+	overflow: hidden;
+	background-color: white;
+}
+
+.modal footer{
+	color: white;
+	font-size: 1.25em;
+	border-bottom-right-radius: 45px; 
+	border-bottom-left-radius: 45px;
+	padding: .5em;
+}
+
+.modal-1 {background-color: var(--main);}
+.modal-2 {background-color: var(--accent);}
+.modal-3 {background-color: var(--main);}
+
+.modal .activeModal {
+	max-height: 300px;
+	padding: .5em;
+}
+
+/*Contact Section*/
+.contact {
+	background-color: var(--bg);
+	text-align: center;
+}
+
+.contact h1 {
+	padding-top: 1.5em;
+	font-size: 2.5em;
+}
+
+.contact form {
+	padding-top: 1.5em;
+	text-align: left;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.contact form input, .contact form textarea {
+	border: 1px solid;
+	padding: 5px;
+}
+
+.contact form .submit {
+	margin-top: .5em;
+	margin-left: 60%;
+	border-radius: 10px;
+	background-color: var(--main);
+	border: 1px solid var(--main);
+	color: white;
+	padding: .5em;
+}
+
+.contact form .submit:hover {
+	color: var(--main);
+	background-color: initial;
+}
+
+.contact address {
+	font-style: normal;
+	text-align: center;
+	display: inline-block;
+	padding: 2em 0;
+}
+
+.contact address p{
+	text-align: left;
+	font-size: 1.125em;
+}
+
+/*Desktop View*/
+
+@media only screen and (min-width: 760px) {
+
+	/*Navigation Section*/
+	i.hamburger{display: none;}
+
+	.nav {
+		max-height: initial;
+		background-color: initial;
+		text-align: right;
+
+		position: absolute;
+		top: 0;
+
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		width: auto;
+	}
+
+	.nav-link{
+		display: inline;
+		padding: .5em 1em;
+		transition: .2s ease-in-out;
+	}
+
+	.nav-link:hover {
+		background-color: white;
+	}
+
+	/*Splash Section*/
+	.splash{
+		height: 100vh;
+	}
+
+	.cta-text h1 {
+		font-size: 6em;
+	}
+
+	.cta-text h2 {
+		font-size: 4em;
+	}
+
+	/*About Section*/
+	.about{padding-bottom: 120px;}
+
+	.about h1{
+		padding-top: 120px;
+		padding-bottom: 60px;
+	}
+
+	.about i {
+		margin: 6rem auto;
+		font-size: 5em;
+	}
+
+	.about p {
+		text-align: left;
+	 	padding: 5em 6em;
+		width: 50%;
+		float: right;
+	}
+
+	/*Pricing Section*/
+	.pricing {padding: 3em 0;}
+
+	.modal-container {
+		display: flex;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.modal{
+		transition: 1s ease-out;
+		width: 25%;
+	}
+
+	.modal:hover {
+		transform: scale(1.2);
+		z-index: 1;
+	}
+
+	.modal article {
+		max-height: 300px;
+		padding: .5em;
+	}
+
+	/*Contact Section*/
+	.contact {text-align: center;}
+
+	.contact h1 {
+		text-align: center;
+		padding-top: 2em;
+		padding-bottom: 1em;
+	}
+
+	.contact form {
+		text-align: center;
+		padding-top: 0;
+		float: right;
+	}
+
+	.contact form .submit{margin-left: 20%;}
+
+	.contact address {
+		padding-top: 160px;
+		padding-bottom: 4em;
+		margin-left: 5em;
+	}
+}

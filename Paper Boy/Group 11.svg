@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 471 163.638">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+        font-size: 61px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-family: SegoeUI, Segoe UI;
+        font-weight: 400;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke-width: 14px;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        stroke: #707070;
+      }
+
+      .cls-4, .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke-width: 11px;
+      }
+
+      .cls-5 {
+        stroke-width: 12px;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_11" data-name="Group 11" transform="translate(-666 -108.42)">
+    <text id="Music_Search" data-name="Music Search" class="cls-1" transform="translate(772 257)"><tspan x="0" y="0">Music </tspan><tspan class="cls-2" y="0">Search</tspan></text>
+    <g id="Group_10" data-name="Group 10" transform="translate(489 -122)">
+      <g id="Ellipse_2" data-name="Ellipse 2" class="cls-3" transform="translate(177 331.151)">
+        <ellipse class="cls-6" cx="32.629" cy="31.453" rx="32.629" ry="31.453"/>
+        <ellipse class="cls-7" cx="32.629" cy="31.453" rx="25.629" ry="24.453"/>
+      </g>
+      <line id="Line_2" data-name="Line 2" class="cls-4" y1="146.978" x2="19.989" transform="translate(235.497 231.5)"/>
+      <path id="Path_1" data-name="Path 1" class="cls-5" d="M337.5,145.5s11.034,60.277,36.372,57.2" transform="translate(-82.014 86)"/>
+    </g>
+  </g>
+</svg>
