@@ -4,8 +4,8 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home | Code Cafe</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script defer src="js/main.js"></script>
+	<link rel="stylesheet" href="./css/main.css">
+	<script defer src="./js/main.js"></script>
 	<link rel="icon" type="image/png" href="assets/favicon.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -16,18 +16,19 @@
 	<nav class="nav" id="nav">
 		<img src="./assets/logo.svg" class="logo" alt="Code Cafe">
 		<div class="links">
-			<a href="#splash" class="nav-link active">Home</a>
-			<a href="#about" class="nav-link">Features</a>
+			<a href="#splash" class="nav-link scroll active">Home</a>
+			<a href="#about" class="nav-link scroll">Features</a>
 			<a href="https://github.com/b3u/Template-Sites" class="nav-link">Develop</a>
-			<a href="#" class="nav-link">Help</a>
+			<a href="support.html" class="nav-link help">Help</a>
 		</div>
+		<i class="fas fa-bars hamburger"></i>
 	</nav>
 	<main class="splash" id="splash">
 		<div class="content">
 			<div class="splash-text">
 				<h1 class="splash-title">Code Collaboration in Real-Time</h1>
 				<h2 class="splash-subtitle">Work with your team without leaving the code editor</h2>
-				<a href="#"  class="btn-light">Download v2.6</a>
+				<a href="#download"  class="btn-light">Download v2.6</a>
 			</div>
 			<img src="./assets/hero_svg.svg" class="splash-img" alt="code editor">
 		</div>
@@ -56,7 +57,49 @@
 		</div>
 	</main>
 	<main class="download" id="download">
-		<h1 class="header">Download</h1>
+		<h1 class="title">Download</h1>
+		<h2 class="subtitle">Choose your Download</h2>
+		<div class="download-container">
+			<select name="os" class="dropdown-os">
+				<option selected disabled value="os">Choose an Operating Sytem</option>
+				<option value="win64">Windows (x64)</option>
+				<option value="win32">Windows (x32)</option>
+				<option value="mac64">Mac (x64)</option>
+				<option value="mac32">Mac (x32)</option>
+				<option value="linux64">Linux (x64)</option>
+				<option value="linux32">Linux (x32)</option>
+			</select>
+			<i class="fas fa-download"></i>
+		</div>
+		<div class="download-btns">
+			<p class="stable btn">
+				<button name="stable" value="stable" class="btn-dark" type="submit">v2.6 <span class="btn-os"></span></button>
+				<label for="stable">Stable Version</label>
+			</p>
+			<p class="testing btn">
+				<button name="testing" value="testing" class="btn-dark" type="submit">v2.6.1 <span class="btn-os"></span></button>
+				<label for="testing">Testing Version</label>
+			</p>
+		</div>
+		<p class="download-mobile">Sorry, downloading is unavailable on mobile!</p>
 	</main>
+	<footer class="footer" id="footer">
+		<div class="pages">
+			<p class="col-1">
+				<a href="#splash" class="page-link">Home</a>
+				<a href="#about" class="page-link">Features</a>
+				<a href="#download" class="page-link">Download</a>
+			</p>
+			<p class="col-2">
+				<a href="https://github.com/b3u/Template-Sites" class="page-link">Develop</a>
+				<a href="#" class="page-link help">Help</a>
+			</p>
+		</div>
+		<address class="address">
+			<p><strong>Address:</strong> 739 High Road XD</p>
+			<p><strong>Telephone:</strong> 972-656-8476</p>
+			<p><strong>Email:</strong> support@codecafe.io</p>
+		</address>
+	</footer>
 </body>
 </html>
