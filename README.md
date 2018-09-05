@@ -16,3 +16,5 @@ The second site available is a business website, and also a one page site. Featu
 ### Code Cafe
 #### *Warning: This website is still under construction*
   *Code Cafe* is one of my favorites. It advertises a service, which I eventually decided was an open-source program for coders. When it is complete, it will be the first two page site, with a help page, and include about and download sections on the home page.
+
+**Licensing:** All sites are licensed under the MIT License.
