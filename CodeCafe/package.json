@@ -1,5 +1,5 @@
 {
-  "name": "CodeCafe",
+  "name": "codecafe",
   "version": "1.0.0",
   "description": "Sample Website for a Programming Technology",
   "main": "main.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "Template-Sites"
   },
-  "author": "Binyamin A. Green",
+  "author": "Binyamin Aron Green",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.24.7",
