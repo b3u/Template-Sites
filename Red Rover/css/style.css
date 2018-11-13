@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --light: #f2f2f2;
   --dark: #333;
@@ -37,7 +38,6 @@
 }
 
 /* Splash Section */
-
 .splash {
   padding-top: 50px;
   height: 100vh;
@@ -75,7 +75,7 @@
 
 /* About Section */
 .about{
-  padding: 4em 1em;
+  padding: 5em 1em;
   background-color: var(--dark);
   color: var(--light);
   text-align: center;
@@ -93,6 +93,7 @@
  padding-top: .5em;
 }
 
+/* Pricing Section */
 .pricing {
   text-align: center;
   background-color: var(--light);
@@ -114,7 +115,7 @@
 
 /* Contact Section */
 .contact {
-  padding: 1em;
+  padding: 2em 1em;
   background-color: var(--dark);
   color: var(--light);
   text-align: center;
@@ -143,4 +144,15 @@ button:hover {
 .contact h1 {
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 480px) {
+  .about-container{
+    flex-direction: column;
+  }
+  
+  .price-container{
+    width: 90%;
+  }
 }

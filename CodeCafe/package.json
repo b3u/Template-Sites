@@ -2,7 +2,7 @@
   "name": "CodeCafe",
   "version": "1.0.0",
   "description": "Sample Website for a Programming Technology",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

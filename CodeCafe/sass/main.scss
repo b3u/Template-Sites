@@ -260,14 +260,16 @@ nav {
 		font-size: 2em;
 	}
 	
-	.links{
+	.links {
 		display: none;
 		position: absolute;
 		top: 50px;
 		right: 0;
 		padding: 2em 2.5em;
-		background: white;
+		background: var(--accent);
 		text-align: center;
+		width: 100%;
+		box-shadow: 0 3px 3px 0 #00000020;
 	}
 
 	.links.active{display:block;}

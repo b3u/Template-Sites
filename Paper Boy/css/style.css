@@ -180,7 +180,7 @@ main {
   margin: 1em; 
   z-index: 0;
   overflow: hidden;
-
+  transition: all 1s ease-in;
 }
 .work figure img {
     height: 100%;
@@ -199,7 +199,7 @@ main {
   align-items: center;
   overflow: hidden;
   color: white;
-  transition: 1s ease-in-out;
+  transition: all 1s ease-in;
 }
 .work figure:hover .work-overlay{
   bottom: 0;
